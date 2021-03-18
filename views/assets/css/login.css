@@ -1,0 +1,24 @@
+
+.userInput{
+    outline: none !important;
+    font-size: large !important;
+    font-weight: 100 !important;
+    font-style: inherit !important;
+    border-top: 0ch !important;
+    border-right: 0ch !important;
+    letter-spacing: 5px;
+    
+    border-left: 0ch !important;
+    border-image-source: linear-gradient(rgba(42, 51, 51, 0.418), rgb(52 58 64 / 59%)) !important;
+    border-image-slice: 1 !important;
+    
+    
+}
+input{
+     font-family: 'Junge', serif;
+}
+.heading{
+    
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 8px;
+}

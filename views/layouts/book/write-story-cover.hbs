@@ -1,0 +1,167 @@
+
+{{> header }}
+
+<section>
+    <article class="container">
+        <div class="row">
+
+            <div class="col-lg-5">
+
+
+                <div class="shadow-lg p-4 rounded">
+
+                    <div class="card border-0">
+                        <div class="card-body">
+
+                            <!-- Create Your Book Cover || FORM -->
+                            <form action="write-story" id="bookCoverForm">
+                                <div class="row">
+
+                                    <div class="col-10">
+                                        <div class="col-12 m-2 mb-2">
+                                            <h5 class="text-muted font-italic"> Create Your Story Cover</h5>
+                                        </div>
+
+                                        <div class="col-12 m-2">
+                                            <input type="text" class="form-control font-italic" id="bookTitleInput" required placeholder="Title Of Storty">
+                                        </div>
+                                        <div class="col-12 m-2">
+                                            <input type="text" class="form-control font-italic" id="bookSubTitleInput"
+                                                placeholder="Sub-Title">
+                                        </div>
+                                        <div class="col-12 m-2">
+                                            <input type="text" class="form-control font-italic" id="bookAuthorInput"
+                                                placeholder="Author">
+                                        </div>
+                                        <div class="input-group col-12 m-2">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text font-italic "
+                                                    for="bookThemeInput">THEME</label>
+                                            </div>
+                                            <select class="custom-select font-italic" id="bookThemeInput">
+                                                <option selected value="bg-white" class="text-uppercase"> Default
+                                                </option>
+                                                <option class="text-uppercase text-dark font-weight-bold"
+                                                    value="bg-dark"> Dark </option>
+                                                <option class="text-uppercase text-danger font-weight-bold"
+                                                    value="bg-danger"> Danger </option>
+                                                <option class="text-uppercase text-primary font-weight-bold"
+                                                    value="bg-primary"> Primary </option>
+                                                <option class="text-uppercase text-secondary font-weight-bold"
+                                                    value="bg-secondary"> Secondary </option>
+                                                <option class="text-uppercase text-success font-weight-bold "
+                                                    value="bg-success"> Success </option>
+                                                <option class="text-uppercase text-warning font-weight-bold "
+                                                    value="bg-warning"> Warning </option>
+                                                <option class="text-uppercase text-info font-weight-bold "
+                                                    value="bg-info"> Info </option>
+
+                                            </select>
+                                        </div>
+                                        <div class="flex-sm-column form-group flex-fill justify-content-sm-center">
+
+                                            <div class="input-group col-12 m-2">
+
+                                                <select id="genreInput" class="form-control font-italic custom-select"
+                                                    name="cardColor">
+
+                                                    <option value="Genre" selected="selected">
+                                                        Story-Genre </option>
+                                                    <option value="Horror">Horror</option>
+                                                    <option value="Fantasy">Fantasy</option>
+                                                    <option value="Fictional">Fictional</option>
+                                                    <option value="Thriller">Thriller</option>
+                                                    <option value="Histrical">Histrical</option>
+                                                    <option value="Rommance">Rommance</option>
+                                                    <option value="Art">Art</option>
+                                                    <option value="Mystery">Mystery</option>
+                                                    <option value="Sci-Fic">Sci-Fic</option>
+
+
+                                                </select>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 m-2">
+                                            <textarea name="" placeholder="Summary" class="form-control font-italic"
+                                                id="bookSummaryInput" cols="10" rows="5"></textarea>
+                                        </div>
+
+                                        <div class="col-12 m-2 text-center">
+                                            <button type="submit" class="btn text-uppercase btn-outline-dark"> Save
+                                                & Next <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                            </button>
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+                            </form>
+                            <!-- Create Your Book Cover || END-FORM -->
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-7">
+
+
+                <!-- BOOK-BORDER -->
+                <!-- BOOK-THEME CHANGER USING JAVASCRIPT -->
+                <div id="bookBorderBox">
+
+                    <div class="border border-dark rounded-left p-5 mt-5 mb-5 m-auto " id="bookCoverBox">
+                        <div>
+                            <span class="badge badge-pill badge-light " id="Genre"></span>
+                        </div>
+
+
+                        <!-- BOOK-TITLE -->
+                        <div class="m-2 d-inline-block text-capitalize p-5">
+                            <!-- <input type="text" class="form-control form-inline form-control-plaintext" value="Title Of The Book"> -->
+                            <h1 class="text-center font-italic" id="bookTitle">Title Of The Story</h1>
+                            <h4 class="text-black-50 text-center font-italic" id="bookSubTitle">Sub-Title</h4>
+
+                            <div class="d-inline-block">
+
+                                <p class="font-weight-lighter font-italic" id="bookAuthor">@author</p>
+
+                            </div>
+                        </div>
+
+                        <!-- LOGO -->
+                        <div class="text-center text-capitalize p-2">
+                            <h6 id="bookTheme"> THEME </h6>
+                        </div>
+
+                        <div class="d-inline-block text-capitalize m-4 pt-5">
+
+                            <h6 class="">
+
+                                Summary : <small id="bookSummary">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Modi ipsa</small>
+                            </h6>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </article>
+</section>
+
+<script src="../../assets/js/write-book-cover.js"></script>
+<!-- BOOK-COVER-PAGE-END -->

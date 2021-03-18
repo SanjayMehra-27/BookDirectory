@@ -1,0 +1,101 @@
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-sm-12 col-lg-8 col-md-12 align-content-lg-center">
+            <div class="container">
+                <div class=" card shadow-lg mt-5 ">
+                    <div class="card-body align-content-lg-center p-5">
+                        <div class="alert alert-warning alert-dismissible fade {{alertStatus}} " role="alert">
+                            <strong> Error : </strong> {{alert}}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <form action="signup" name="form" id="signupForm" method="post">
+
+                            <div class="row">
+                                <div class="mb-3 col-10">
+                                    <div class=" align-content-center">
+                                        <div class="card-text ">
+                                            <h4
+                                                class="heading text-center text text-black-50 text-justify text-capitalize font-weight-bold">
+                                                <i class="fas fa-2x fa-book-reader    "></i> Sign Up
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 col-10">
+                                <div class="input-group-prepend">
+                                    <input type="text" value="{{user.username}}" name="username" class="userInput col-10"
+                                        placeholder="Username" id="username">
+                                    <label for="username" class="col-sm-1 col-lg-2 col-form-label"> @ </label>
+                                </div>
+                            </div>
+                            <div class="mb-3 col-10">
+
+                                <div class="input-group-prepend">
+                                    <input type="text" value="{{user.fullname}}" name="fullname" class="userInput col-10"
+                                        placeholder="Full-Name" id="fullname">
+                                    <label for="fullname" class="col-sm-2 col-form-label">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </label>
+                                </div>
+
+                            </div>
+                            <div class="mb-3 col-10">
+                                <div class="input-group-prepend">
+                                    <input type="email" value="{{user.email}}" name="email" class="userInput col-10"
+                                        placeholder="Email" id="email">
+
+                                    <label for="email" class="col-sm-2 col-form-label">
+                                        <i class="fas fa-envelope"></i>
+                                    </label>
+
+                                </div>
+                            </div>
+                            <div class="mb-3 col-10">
+
+                                <div class="input-group-prepend">
+                                    <input type="password" value="{{user.password}}" name="password"
+                                        class="userInput col-10" placeholder="Password" id="password">
+                                    <label for="password" class="col-sm-2 col-form-label">
+                                        <i class="fas fa-lock"></i>
+                                    </label>
+                                </div>
+
+                                <div class="mt-5 justify-content-center">
+                                    <input type="submit" name="submit" value="Sign Up"
+                                        class="btn col-10 btn-sm btn-outline-dark">
+                                </div>
+                            </div>
+
+                        </form>
+
+                        <a class="btn btn-sm btn-danger text-uppercase text-monospace font-weight-bold float-right"
+                            href="login"> Log-In <i class="fas fa-arrow-alt-circle-right    "></i> </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-lg-4 col-md-12 align-content-lg-center ">
+            <div class="container">
+                <div class="card shadow-lg mt-5 p-3">
+                    <div class="card-body bg-transparent align-content-lg-center p-5">
+                        <div class="card-text text-center">
+                            <h4 class="text text-info text-center text-uppercase heading "> Welcome </h4>
+                            <p class="text text-primary text-uppercase heading p-3"><small>Read Write Repeat</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

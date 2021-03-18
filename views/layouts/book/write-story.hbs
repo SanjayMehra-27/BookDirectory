@@ -1,0 +1,144 @@
+
+<script src="../../assets/js/write-book.js"></script>
+
+{{> header }}
+
+<!-- BOOK-COVER-PAGE -->
+
+<section>
+    <article class="container-fluid">
+    <article class="container-fluid">
+        <div class="row">
+
+            <!-- BOOK-EDITOR -->
+            <div class="col-lg-5">
+
+
+                <div class="shadow-lg rounded">
+                    <!-- Write Your Book || FORM -->
+
+                    <!-- TEXT EDITOR Blog Modal || Post Blog -->
+
+                    <!-- Header -->
+                    <div class="card-header bg-dark text-light">
+
+
+                        <h6 class="text-light">
+
+                        </h6>
+                        <h6 class="row">
+                            <i class="fa fa-clock-o " aria-hidden="true"> </i>
+                            <p id="time" class="font-italic small ml-1 font-weight-bold"> </p>
+                            <br>
+                            <i class="fa fa-calendar ml-2 " aria-hidden="true"> </i>
+                            <p id="date" class="font-italic small ml-1 font-weight-bold"> </p>
+                        </h6>
+
+                        <h6 class="card-title text-muted">Write Your Short Story</h6>
+
+                    </div>
+
+                    <!-- Body -->
+                    <div class="card-body ">
+                        <!-- text Editor Form -->
+                        <form id="bookTextEditorForm" method="post" enctype="multipart/form-data">
+
+                            <!-- TEXTAREA -->
+                            <textarea id="summernote" name="summernoteInput" cols="30" rows="10"></textarea>
+
+                            <div class="form-group">
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <button type="submit"
+                                            class="btn btn-sm float-right btn-lg btn-dark m-2 font-italic"> Save
+                                        </button>
+                                    </div>
+                                    <div class="col-12">
+
+                                        <button type="button" id="newPageBtn"
+                                            class="btn float-right btn-primary btn-sm  m-2 font-italic"> New Page <i
+                                                class="fa fa-plus"></i> </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </form>
+
+                    </div>
+
+
+
+
+                    <!-- Write Your Book || END-FORM -->
+                </div>
+
+            </div>
+            <!-- END-BOOK-EDITOR -->
+
+            <!-- BOOK-PAGE-PREVIEW -->
+            <div class="col-lg-7">
+
+                <button type="submit"
+                    class="btn m-2 float-lg-right btn-sm btn-danger text-uppercase font-italic">Publish</button>
+
+                <div style="overflow-y: scroll; height:800px;" id="summernoteOutputPages"
+                    class="border border-dark p-5 ">
+
+
+
+
+                    <div id="content-box" class="shadow-lg p-4 h-100 overflow-hidden">
+                        <div class="float-right">
+
+                            <a href="" id="0" class="btn btn-outline-primary btn-sm m-2"> <i
+                                    class="fas fa-edit    "></i> </a>
+                            <a href="" id="0" class="btn btn-sm btn-outline-danger"> <i class="fas fa-trash "></i></a>
+                        </div>
+                        <div>
+                            <h6 id="pageNumber">Page : 1 </h6>
+                        </div>
+                        <div id="content">
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!-- END-BOOK-PAGE-PREVIEW -->
+
+    <script type="application/javascript" src="../js/editor.js"></script>
+        </div>
+    
+    </article>
+</section>
+<!--End TEXT EDITOR Blog Modal -->
+
+
+<!-- BOOK-COVER-PAGE-END -->
+
+<script type="application/javascript">
+
+    $('#summernote').summernote({
+
+
+        placeholder: ' Write Your Book Here ',
+        tabsize: 2,
+        height: 400, // set editor height
+        minHeight: 300, // set minimum height of editor
+        maxHeight: 500, // set maximum height of editor
+        // set focus to editable area after initializing summernote
+    });
+
+</script>
+<script type="application/javascript">
+
+
+    $(document).ready(function () {
+        $('#summernote').summernote();
+    });
+
+</script>

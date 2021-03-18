@@ -1,0 +1,90 @@
+
+<script src="../js/login.js"></script>
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-sm-12 col-lg-8 col-md-12 align-content-lg-center ">
+            <div class="container">
+                <div class="card shadow-lg mt-5">
+                    <div class="card-body align-content-lg-center p-3">
+                        <div class="alert alert-warning alert-dismissible fade {{alertStatus}}" role="alert">
+                            <strong> Error : </strong> {{alert}}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <form action="login" method="post" id="loginForm">
+                            <div class="row">
+                                <div class="mb-5 col-10">
+                                    <div class="col-sm-12 col-lg-12 col-md-12 align-content-center">
+                                        <div class="card-text">
+                                            <h4
+                                                class="col-9 heading text-center text text-black-50 text-justify text-capitalize font-weight-bold">
+                                                <i class="fas fa-2x fa-book-reader"></i> Log-In
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3 col-10">
+
+                                <div class="input-group-prepend">
+                                    <label for="username" class="col-form-label p-1">
+                                        <h5><b> @ </b></h5>
+                                    </label>
+                                    <input type="text" name="username" value="{{user.username}}" class="col-10 userInput"
+                                        placeholder="Username" id="username">
+                                </div>
+
+                            </div>
+
+                            <div class="mb-3 col-10">
+
+
+                                <div class="input-group-prepend">
+                                    <label for="password" class="col-form-label p-1">
+                                        <i class="fas fa-pen-nib"></i>
+                                    </label>
+                                    <input type="password" name="password" value="{{user.password}}"
+                                        class="col-10 userInput" placeholder="Password" id="password">
+
+
+                                </div>
+
+                                <div class="mt-5  col-sm-12 col-lg-12 col-md-12 ml-3">
+                                    <input type="submit" value="Log In" class="col-8 btn btn-sm btn-outline-dark">
+                                </div>
+
+
+                            </div>
+
+                        </form>
+
+                        <a class="btn btn-sm btn-danger text-uppercase text-monospace font-weight-bold float-right"
+                            href="signup"> Sign-Up <i class="fas fa-arrow-alt-circle-right    "></i> </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-lg-4 col-md-12 align-content-lg-center ">
+            <div class="container">
+                <div class="card shadow-lg mt-5 p-3">
+                    <div class="card-body bg-transparent align-content-lg-center p-5">
+                        <div class="card-text text-center">
+                            <h4 class="text text-info text-center text-uppercase heading "> Welcome </h4>
+                            <p class="text text-primary text-uppercase heading p-3"><small>Read Write Repeat</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>

@@ -14,12 +14,12 @@ const bookController = require('./controllers/bookController')
 const port = process.env.port || 9000;
 
 // Start mongod || Server
-execFile("C:/Program Files/MongoDB/Server/4.0/bin/mongod.exe", (error, stdout, stderr) => {
-    if (error) {
-        throw error;
-    }
-    console.log("Mongod Started : - " + stdout);
-});
+// execFile("C:/Program Files/MongoDB/Server/4.0/bin/mongod.exe", (error, stdout, stderr) => {
+//     if (error) {
+//         throw error;
+//     }
+//     console.log("Mongod Started : - " + stdout);
+// });
 
 //CREATE APP
 let app = express();

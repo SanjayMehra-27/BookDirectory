@@ -24,8 +24,6 @@ router.get('/', (req, res) => {
 /***************** USER LOGIN REQUESTS ****************/
 
 router.get('/login', (req, res) => {
-    var user = new User();
-
     res.render('./layouts/user/login.hbs', {
         user: ""
     })
